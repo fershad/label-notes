@@ -1,0 +1,14 @@
+---
+layout: layout.liquid
+pageTitle: Check the label.
+---
+<div  class="items">
+<ul>
+{% for additive in collections.additives %}
+    <li>
+        <h2>{{ additive.data.zh-tw }}</h2>
+        <p>{{ additive.data.en }}</p>
+    </li>
+    {% endfor %}
+</ul>
+</div>
